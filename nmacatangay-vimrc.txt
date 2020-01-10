@@ -311,6 +311,9 @@ nnoremap <Leader>pretty :%!python -m json.tool<CR>zR
 " <Space> Page Down
 nnoremap <Space> <C-d>
 
+" Use jk instead of ESC
+inoremap jk <Esc>
+inoremap JK <Esc>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
