@@ -400,6 +400,8 @@ set foldnestmax=2     " Only fold X levels deep
 " Highlight column 81
 let &colorcolumn=join(range(81, 81), ',')
 
+" Cursor is always at the center
+set scrolloff=999
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
