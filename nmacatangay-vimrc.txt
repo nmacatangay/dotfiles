@@ -354,10 +354,14 @@ augroup four-space
 augroup end
 
 augroup two-space
-  autocmd BufReadPost,BufNewFile,BufEnter *.js,*.jsx,*.proto,*.rb set shiftwidth=2
-  autocmd BufReadPost,BufNewFile,BufEnter *.js,*.jsx,*.proto,*.rb set softtabstop=2
-  autocmd BufReadPost,BufNewFile,BufEnter *.js,*.jsx,*.proto,*.rb set tabstop=2
-  autocmd BufReadPost,BufNewFile,BufEnter *.js,*.jsx,*.proto,*.rb let g:indent_guides_guide_size = 1
+  autocmd BufReadPost,BufNewFile,BufEnter *.js,*.jsx,*.proto,*.rb,*.ts,*.tsx set shiftwidth=2
+  autocmd BufReadPost,BufNewFile,BufEnter *.js,*.jsx,*.proto,*.rb,*.ts,*.tsx set softtabstop=2
+  autocmd BufReadPost,BufNewFile,BufEnter *.js,*.jsx,*.proto,*.rb,*.ts,*.tsx set tabstop=2
+  autocmd BufReadPost,BufNewFile,BufEnter *.js,*.jsx,*.proto,*.rb,*.ts,*.tsx let g:indent_guides_guide_size = 1
+augroup end
+
+augroup typescript
+  autocmd BufReadPost,BufNewFile,BufEnter *.ts,*.tsx set syntax=javascript
 augroup end
 
 " Setup colors for Indent Guide
