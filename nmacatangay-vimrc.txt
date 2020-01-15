@@ -46,21 +46,37 @@ call vundle#begin()
 " Required
 Plugin 'VundleVim/Vundle.vim'
 
-" Add Plugins here (https://vimawesome.com/ has awesome vim plugins)
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"
+" Development Tools
+"
+
+Plugin 'mileszs/ack.vim'                  " search tool
+Plugin 'tpope/vim-fugitive'               " git wrapper
+Plugin 'airblade/vim-gitgutter'           " display git diff while editing
 Plugin 'scrooloose/nerdtree'              " file explorer
 Plugin 'jistr/vim-nerdtree-tabs'          " nerdtree improved
-Plugin 'mileszs/ack.vim'                  " search tool
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"
+" Visual
+"
+
 Plugin 'altercation/vim-colors-solarized' " fancy colors :)
-Plugin 'airblade/vim-gitgutter'           " display git diff while editing
 Plugin 'vim-airline/vim-airline'          " fancy menu
 Plugin 'vim-airline/vim-airline-themes'   " vim-airline themes
-Plugin 'tpope/vim-fugitive'               " git wrapper
 Plugin 'nathanaelkane/vim-indent-guides'  " indention guide
 Plugin 'bronson/vim-trailing-whitespace'  " highlights trailing whitespace in red
-Plugin 'pangloss/vim-javascript'          " required for vim-jsx
-Plugin 'mxw/vim-jsx'                      " jsx syntax highlight
-Plugin 'w0rp/ale'                         " syntax linting
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"
+" Syntax
+"
+
+Plugin 'dense-analysis/ale'               " syntax linting
+Plugin 'kchmck/vim-coffee-script'         " coffee syntax highlight
+Plugin 'pangloss/vim-javascript'          " jsx syntax highlight
+Plugin 'mxw/vim-jsx'                      " jsx syntax highlight
 
 " Required
 call vundle#end()
