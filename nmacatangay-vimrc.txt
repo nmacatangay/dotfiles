@@ -169,6 +169,9 @@ set updatetime=100
 " Plugin - vim-airline
 "
 
+" Integrate with ale
+let g:airline#extensions#ale#enabled = 1
+
 " Default Theme (:AirlineTheme <TAB> to show other themes)
 let g:airline_theme = 'minimalist'
 
@@ -198,14 +201,19 @@ let g:indent_guides_auto_colors = 0
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
 " Javascript
-"  JavaScript Standard Style (standard JS)
-"  npm install standard --global
+"  ESLint
+"  npm install eslint --save-dev
+"  yarn install eslint --dev
 "
 " Python
 "  pycodestyle (formerly pep8)
 "  pip install pycodestyle
 "  pip install --upgrade pycodestyle
 "
+" Ruby
+"  RuboCop
+"  gem install rubocop
+"  gem update rubocop
 
 " Start Ale automatically
 let g:ale_lint_on_enter = 1
@@ -213,25 +221,27 @@ let g:ale_lint_on_enter = 1
 " Start Ale only on specified files
 let g:ale_linters_explicit = 1
 
-" Auto Start Sign Gutters
+" Auto-start sign gutters
 let g:ale_sign_column_always = 1
 
-" Change Default Signs
-let g:ale_sign_error = '>>'   " Default: >>
+" Fix files on save
+let g:ale_fix_on_save = 1
+
+" Change default signs
+let g:ale_sign_error =   '>>' " Default: >>
 let g:ale_sign_warning = '--' " Default: --
 
-" Setup linters
+" Setup linters and fixers
 let g:ale_linters = {
-\   'javascript': ['standard'],
-\   'python': ['pycodestyle']
+\   'javascript': ['eslint'],
+\   'python': ['pycodestyle'],
+\   'ruby': ['rubocop']
 \}
 let g:ale_fixers = {
-\   'javascript': ['standard'],
-\   'python': ['pycodestyle']
+\   'javascript': ['eslint'],
+\   'python': ['pycodestyle'],
+\   'ruby': ['rubocop']
 \}
-
-" Integrate with vim-airline
-let g:airline#extensions#ale#enabled = 1
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
