@@ -75,8 +75,8 @@ Plugin 'bronson/vim-trailing-whitespace'  " highlights trailing whitespace in re
 
 Plugin 'dense-analysis/ale'               " syntax linting
 Plugin 'kchmck/vim-coffee-script'         " coffee syntax highlight
-Plugin 'pangloss/vim-javascript'          " jsx syntax highlight
-Plugin 'mxw/vim-jsx'                      " jsx syntax highlight
+Plugin 'yuezk/vim-js'                     " jsx syntax highlight
+Plugin 'maxmellon/vim-jsx-pretty'         " jsx syntax highlight
 Plugin 'leafgarland/typescript-vim'       " ts syntax highlight
 
 " Required
