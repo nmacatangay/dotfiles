@@ -5,23 +5,6 @@
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
-" Vim - https://github.com/vim/vim
-"
-" Install or update Vim
-"  git clone https://github.com/vim/vim.git
-"   or git pull if you already have this
-"  cd vim/src
-"  make
-"   If this doesn't work, you may need to run this command:
-"    Ubuntu 16.04: sudo apt-get install ncurses-dev
-"    Ubuntu 16.10: sudo apt-get install libtinfo-dev
-"  sudo make install
-"  Reconnect to shell
-"  :version (inside vim) to check current vim version
-"
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"
 " Vundle - https://github.com/VundleVim/Vundle.vim
 "
 " Install Vundle
@@ -118,7 +101,7 @@ endif
 "
 
 " Auto suppress gitgutter when there are too many signs
-let g:gitgutter_max_signs = 1000  " 500 default value
+let g:gitgutter_max_signs = 1000 " 500 default value
 
 " Show diff markers quickly
 set updatetime=100
@@ -158,18 +141,17 @@ let g:indent_guides_auto_colors = 0
 "
 " Plugin - ale
 "
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"
+
 " Javascript
 "  ESLint
 "  npm install eslint --save-dev
 "  yarn add eslint --dev
-"
+
 " Python
 "  pycodestyle (formerly pep8)
 "  pip install pycodestyle
 "  pip install --upgrade pycodestyle
-"
+
 " Ruby
 "  RuboCop
 "  gem install rubocop
@@ -314,6 +296,7 @@ inoremap JK <Esc>
 inoremap jK <Esc>
 inoremap Jk <Esc>
 
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
 " Auto Commands
@@ -404,6 +387,7 @@ let &colorcolumn=join(range(101, 101), ',')
 
 " Cursor is always at the center
 set scrolloff=999
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
