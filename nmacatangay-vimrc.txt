@@ -77,6 +77,7 @@ Plugin 'dense-analysis/ale'               " syntax linting
 Plugin 'kchmck/vim-coffee-script'         " coffee syntax highlight
 Plugin 'pangloss/vim-javascript'          " jsx syntax highlight
 Plugin 'mxw/vim-jsx'                      " jsx syntax highlight
+Plugin 'leafgarland/typescript-vim'       " ts syntax highlight
 
 " Required
 call vundle#end()
@@ -358,10 +359,6 @@ augroup two-space
   autocmd BufReadPost,BufNewFile,BufEnter *.js,*.jsx,*.proto,*.rb,*.ts,*.tsx set softtabstop=2
   autocmd BufReadPost,BufNewFile,BufEnter *.js,*.jsx,*.proto,*.rb,*.ts,*.tsx set tabstop=2
   autocmd BufReadPost,BufNewFile,BufEnter *.js,*.jsx,*.proto,*.rb,*.ts,*.tsx let g:indent_guides_guide_size = 1
-augroup end
-
-augroup typescript
-  autocmd BufReadPost,BufNewFile,BufEnter *.ts,*.tsx set syntax=javascript
 augroup end
 
 " Setup colors for Indent Guide
