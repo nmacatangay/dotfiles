@@ -354,6 +354,8 @@ nnoremap <Space> <C-d>
 " Use jk instead of ESC
 inoremap jk <Esc>
 inoremap JK <Esc>
+inoremap jK <Esc>
+inoremap Jk <Esc>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
