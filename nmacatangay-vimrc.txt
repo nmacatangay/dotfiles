@@ -440,8 +440,8 @@ set foldlevelstart=1  " Start folding at X level
 set foldnestmax=2     " Only fold X levels deep
 "set nofoldenable     " Don't automatically fold (commented out to always enable folding at file open)
 
-" Highlight column 81
-let &colorcolumn=join(range(81, 81), ',')
+" Highlight column 101
+let &colorcolumn=join(range(101, 101), ',')
 
 " Cursor is always at the center
 set scrolloff=999
