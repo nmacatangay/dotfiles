@@ -289,16 +289,16 @@ nnoremap L <C-w>l
 nnoremap <Leader>tm0 :tabmove 0<CR>
 
 " \gs Git status
-nnoremap <Leader>gs :Gstatus<CR>
+nnoremap <Leader>gs :NERDTreeTabsClose<CR>:Gstatus<CR>:NERDTreeTabsOpen<CR><C-w>l<C-w>k
 
 " \gc Git commit
 nnoremap <Leader>gc :Gcommit<CR>
 
 " \gd Git diff
-nnoremap <Leader>gd :Gdiff<CR>
+nnoremap <Leader>gd :NERDTreeTabsClose<CR>:Gdiffsplit<CR>
 
 " \gb Git blame
-nnoremap <Leader>gb :Gblame<CR>
+nnoremap <Leader>gb :NERDTreeTabsClose<CR>:Gblame<CR>
 
 " \go Git checkout
 nnoremap <Leader>go :Git checkout<Space>
