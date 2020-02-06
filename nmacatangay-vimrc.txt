@@ -245,6 +245,11 @@ let g:ale_fixers = {
 \   'python': ['pycodestyle'],
 \   'ruby': ['rubocop']
 \}
+let g:ale_pattern_options = {
+\   '\.jsx$': { 'ale_linters': ['eslint'], 'ale_fixers': ['eslint'] },
+\   '\.tsx$': { 'ale_linters': ['eslint'], 'ale_fixers': ['eslint'] }
+\}
+let g:ale_pattern_options_enabled = 1
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
