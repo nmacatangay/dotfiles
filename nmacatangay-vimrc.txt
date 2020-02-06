@@ -262,7 +262,7 @@ nnoremap <Leader>ig :IndentGuidesToggle<CR>
 " \gg Toggle Git Gutter
 nnoremap <Leader>gg :GitGutterToggle<CR>
 
-" \ln Toggle Git Gutter
+" \ln Toggle ALE
 nnoremap <Leader>ln :ALEToggle<CR>
 
 " Ack will use Ack! instead (Ack! will not jump to first result automatically)
