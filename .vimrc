@@ -242,7 +242,7 @@ nnoremap <Leader>gc :Gcommit<CR>
 nnoremap <Leader>gd :NERDTreeTabsClose<CR>:Gdiffsplit<CR>
 
 " \gq Quit and re-open NerdTreeTabs
-nnoremap <Leader>gq :q<CR>:NERDTreeTabsOpen<CR>
+nnoremap <Leader>gq :q<CR>:NERDTreeTabsOpen<CR><C-w>l
 
 " \gb Git blame
 nnoremap <Leader>gb :NERDTreeTabsClose<CR>:Gblame<CR>
