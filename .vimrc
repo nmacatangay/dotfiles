@@ -344,6 +344,7 @@ set ruler             " Shows line and character position (lower right) (hidden 
 set showcmd           " Shows currently typed commands (lower right)
 set wildmenu          " Shows completable commands when pressing <TAB>
                       "  i.e. :colorscheme <TAB>
+set scrolloff=999     " Cursor is always at the center
 
 " Beeps and Flashes
 set noerrorbells      " Disable beeping sound
@@ -384,9 +385,6 @@ set foldnestmax=2     " Only fold X levels deep
 
 " Highlight column 101
 let &colorcolumn=join(range(101, 101), ',')
-
-" Cursor is always at the center
-set scrolloff=999
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
