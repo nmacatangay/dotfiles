@@ -141,21 +141,21 @@ let g:indent_guides_auto_colors = 0
 "
 " Plugin - ale
 "
-
 " Javascript
 "  ESLint
 "  npm install eslint --save-dev
 "  yarn add eslint --dev
-
+"
 " Python
 "  pycodestyle (formerly pep8)
 "  pip install pycodestyle
 "  pip install --upgrade pycodestyle
-
+"
 " Ruby
 "  RuboCop
 "  gem install rubocop
 "  gem update rubocop
+"
 
 " Start Ale automatically
 let g:ale_lint_on_enter = 1
@@ -221,8 +221,7 @@ nnoremap H <C-w>h
 nnoremap J <C-w>j
 
 " <SHFT+k or K> Move cursor to split windows (Above)
-" This replaces the shortcut key for opening the manual for the highlighted
-" command
+" This replaces the shortcut key for opening the manual for the highlighted command
 nnoremap K <C-w>k
 
 " <SHFT+l or L> Move cursor to split windows (Right)
