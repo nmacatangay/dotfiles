@@ -296,6 +296,9 @@ inoremap JK <Esc>
 inoremap jK <Esc>
 inoremap Jk <Esc>
 
+" ; is also :
+nnoremap ; :
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
