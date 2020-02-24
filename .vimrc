@@ -116,10 +116,10 @@ set updatetime=100
 let g:airline#extensions#ale#enabled = 1
 
 " Default Theme (:AirlineTheme <TAB> to show other themes)
-let g:airline_theme = 'minimalist'
+let g:airline_theme = 'tomorrow'
 
-" Prerequisite (sudo apt-get install powerline)
-" let g:airline_powerline_fonts = 1
+" Use Powerline Fonts (https://github.com/powerline/fonts) (Ubuntu Mono derivative Powerline 16pt.)
+let g:airline_powerline_fonts = 1
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
