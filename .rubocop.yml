@@ -1,0 +1,11 @@
+Layout/LineLength:
+  Max: 100
+
+Metrics:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
