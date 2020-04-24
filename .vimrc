@@ -121,6 +121,10 @@ let g:airline_theme = 'tomorrow'
 " Use Powerline Fonts (https://github.com/powerline/fonts) (Ubuntu Mono derivative Powerline 16pt.)
 let g:airline_powerline_fonts = 1
 
+" Enable tabline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
