@@ -278,6 +278,9 @@ nnoremap <Leader>a :Ack!<Space>
 " \f Fuzzy find files
 nnoremap <Leader>f <C-w>k<C-w>l:Files<CR>
 
+" \qa Force quit all files
+nnoremap <Leader>qa :qa!<CR>
+
 " FORCE hjkl :)
 noremap <Up>    <Nop>
 noremap <Down>  <Nop>
