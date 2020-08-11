@@ -63,6 +63,7 @@ Plugin 'kchmck/vim-coffee-script'         " coffee syntax highlight
 Plugin 'yuezk/vim-js'                     " jsx syntax highlight
 Plugin 'maxmellon/vim-jsx-pretty'         " jsx syntax highlight
 Plugin 'leafgarland/typescript-vim'       " ts syntax highlight
+Plugin 'Quramy/tsuquyomi'                 " ts linter
 
 " Required
 call vundle#end()
@@ -326,6 +327,8 @@ augroup end
 autocmd VimEnter * :highlight IndentGuidesOdd  ctermbg=Black ctermfg=Green
 autocmd VimEnter * :highlight IndentGuidesEven ctermbg=Black ctermfg=Green
 
+" .ts* is typescript
+autocmd BufNewFile,BufRead *.ts* setlocal filetype=typescript
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
