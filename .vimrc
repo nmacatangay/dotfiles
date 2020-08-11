@@ -348,6 +348,7 @@ set backspace=2       " Make backspace behave list most other programs
 set t_Co=256
 set background=dark
 colorscheme solarized
+highlight! link SignColumn LineNr " gitgutter color fix
 
 " Interface
 set number            " Shows line numbers
