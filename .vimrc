@@ -64,6 +64,7 @@ Plugin 'yuezk/vim-js'                     " jsx syntax highlight
 Plugin 'maxmellon/vim-jsx-pretty'         " jsx syntax highlight
 Plugin 'leafgarland/typescript-vim'       " ts syntax highlight
 Plugin 'Quramy/tsuquyomi'                 " ts linter
+Plugin 'fatih/vim-go'                     " go plugins
 
 " Required
 call vundle#end()
@@ -144,6 +145,16 @@ let g:indent_guides_auto_colors = 0
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
+" Plugin - vim-go
+"
+
+" Disable vim-go overriding mapping
+let g:go_doc_keywordprg_enabled = 0
+let g:go_def_mapping_enabled = 0
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"
 " Plugin - ale
 "
 " Javascript
@@ -172,7 +183,7 @@ let g:ale_linters_explicit = 1
 let g:ale_sign_column_always = 1
 
 " Fix files on save
-let g:ale_fix_on_save = 1
+let g:ale_fix_on_save = 0
 
 " Change default signs
 let g:ale_sign_error =   '>>' " Default: >>
@@ -237,19 +248,19 @@ nnoremap L <C-w>l
 nnoremap <Leader>tm0 :tabmove 0<CR>
 
 " \gs Git status
-nnoremap <Leader>gs :NERDTreeTabsClose<CR>:Gstatus<CR>:NERDTreeTabsOpen<CR><C-w>l<C-w>k
+nnoremap <Leader>gs :NERDTreeTabsClose<CR>:Git<CR>:NERDTreeTabsOpen<CR><C-w>l<C-w>k
 
 " \gc Git commit
-nnoremap <Leader>gc :Gcommit<CR>
+nnoremap <Leader>gc :Git commit<CR>
 
 " \gd Git diff
 nnoremap <Leader>gd :NERDTreeTabsClose<CR>:Gdiffsplit<CR>
 
 " \gq Quit and re-open NerdTreeTabs
-nnoremap <Leader>gq :q<CR>:NERDTreeTabsOpen<CR><C-w>l
+nnoremap <Leader>gq :NERDTreeTabsClose<CR>:q<CR>:NERDTreeTabsOpen<CR><C-w>l
 
 " \gb Git blame
-nnoremap <Leader>gb :NERDTreeTabsClose<CR>:Gblame<CR>
+nnoremap <Leader>gb :NERDTreeTabsClose<CR>:Git blame<CR>
 
 " \go Git checkout
 nnoremap <Leader>go :Git checkout<Space>
@@ -297,6 +308,11 @@ nnoremap <Leader>pretty :%!python -m json.tool<CR>zR
 " <Space> Page Down
 nnoremap <Space> <C-d>
 
+" <S-Space> Page Up
+" iTerm2 -> Preferences -> Profiles -> Keys -> +
+"   Key Combination: Shift+Space
+"   Action: Send Hex Codes: 0x15
+
 " Use jk instead of ESC
 inoremap jk <Esc>
 inoremap JK <Esc>
@@ -313,10 +329,10 @@ nnoremap ; :
 "
 
 augroup four-space
-  autocmd BufReadPost,BufNewFile,BufEnter *.py set shiftwidth=4
-  autocmd BufReadPost,BufNewFile,BufEnter *.py set softtabstop=4
-  autocmd BufReadPost,BufNewFile,BufEnter *.py set tabstop=4
-  autocmd BufReadPost,BufNewFile,BufEnter *.py let g:indent_guides_guide_size = 2
+  autocmd BufReadPost,BufNewFile,BufEnter *.py,*.go set shiftwidth=4
+  autocmd BufReadPost,BufNewFile,BufEnter *.py,*.go set softtabstop=4
+  autocmd BufReadPost,BufNewFile,BufEnter *.py,*.go set tabstop=4
+  autocmd BufReadPost,BufNewFile,BufEnter *.py,*.go let g:indent_guides_guide_size = 2
 augroup end
 
 augroup two-space
@@ -392,9 +408,9 @@ set splitright        " Cursor will appear on right split when using vsplit
 
 " Folding
 set foldmethod=indent " Easiest foldmethod to work with
-set foldlevelstart=1  " Start folding at X level
-set foldnestmax=2     " Only fold X levels deep
-"set nofoldenable     " Don't automatically fold (commented out to always enable folding at file open)
+set foldlevelstart=2  " Start folding at X level
+set foldnestmax=5     " Only fold X levels deep
+set nofoldenable      " Don't automatically fold (commented out to always enable folding at file open)
 
 " Highlight column 101
 let &colorcolumn=join(range(101, 101), ',')
