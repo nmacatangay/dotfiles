@@ -365,6 +365,7 @@ set t_Co=256
 set background=dark
 colorscheme solarized
 highlight! link SignColumn LineNr " gitgutter color fix
+highlight Normal ctermbg=none " WSL fix
 
 " Interface
 set number            " Shows line numbers
